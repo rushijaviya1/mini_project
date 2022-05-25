@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+      #imagesizehome
+      {
+        height: 273px;
+        width:100%;
+      }
+.ab {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 44px;
+    filter: blur(0px);
+}
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+@media screen and (max-width: 650px) and (max-height: 150px) {
+  .column {
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: rgb(10, 10, 10);
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center center;
+  cursor: pointer;
+  width: 100%;
+  /* animation: zoom-in-zoom-out 3s ease infinite; */
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+#bgp {
+            border: 0px solid rgb(250, 246, 246);
+            padding: 55px;
+            background: url(homebg2.jpg);
+            filter: blur(3px);
+            /* backdrop-filter: blur(100px); */
+            background-size:cover;
+            background-repeat: no-repeat;
+            background-position:center center;
+        }
+        #tbp{
+            background-color: rgb(0,0,0); /* Fallback color */
+            background-color: rgba(0, 0, 0, 0); /* Black w/opacity/see-through */
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+            border: none;
+            position: absolute;
+            top: 35%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1;
+            width: 80%;
+            padding: 20px;
+            text-align: center;
+        }
+.but{
+  /* background-color: rgb(0, 0, 0); */
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 30px;
+  color: rgb(255, 255, 255);
+  font-style:unset;
+  
+  /* padding: 0px; */
+}
+.but:hover {
+  background-color: rgba(32, 29, 29, 0.527);
+}
+.headinpro{
+    text-align: center;
+    font-size: 59px;
+}
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+/*  */
+*,
+        *:before,
+        *:after {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: poppins;
+            margin: 0;
+            display: grid;
+            font-size: 14px;
+        }
+
+        header p {
+            padding: 50px;
+            text-align: center;
+            color: #bebebe;
+            text-transform: uppercase;
+            font-size: 65px;
+            font-weight: 700;
+        }
+
+        .footer {
+            display: flex;
+            flex-flow: row wrap;
+            padding: 50px;
+            color: #fff;
+            background-color: #444;
+        }
+
+        .footer>* {
+            flex: 1 100%;
+        }
+
+        .l-footer {
+            margin-right: 1.25em;
+            margin-bottom: 2em;
+        }
+
+
+        h2 {
+            font-weight: 400;
+            font-size: 15px;
+        }
+
+        .footer ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .footer li {
+            line-height: 2em;
+        }
+
+        .footer a {
+            text-decoration: none;
+        }
+
+        .r-footer {
+            display: flex;
+            flex-flow: row wrap;
+        }
+
+        .r-footer>* {
+            flex: 1 50%;
+            margin-right: 1.25em;
+        }
+
+        .box a {
+            color: #999;
+        }
+
+        .h-box {
+            column-count: 1;
+            column-gap: 1.25em;
+        }
+
+        .b-footer {
+            text-align: center;
+            color: #999;
+            padding-top: 60px;
+            /* padding-top: 50px; */
+
+        }
+
+        .l-footer p {
+            padding-right: 20%;
+            color: #999;
+        }
+
+        @media screen and (min-width: 600px) {
+            .r-footer>* {
+                flex: 1;
+            }
+
+            .features {
+                flex-grow: 2;
+                margin-left: 200px;
+            }
+
+            .l-footer {
+                flex: 1 0px;
+            }
+
+            .r-footer {
+                flex: 2 0px;
+            }
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<body style="background-color: rgb(255, 255, 255);">
+  <div class="main_tabs" style="text-align-last: center;">
+    <div class="tabs" style="background-color: rgb(0, 0, 0) ;">
+      <a id="home_tab" href="index.html" class="but">Home &emsp;</a>
+      <a id="other_tab" href="product.html" class="but">Products&emsp;</a>
+      <a id="other_tab" href="login.html" class="but">Login&emsp;</a>
+      <a id="other_tab" href="about.html" class="but">About us</a>
+    </div> 
+  </div>
+<div id="bgp" style="height: 500px; width: 1400px"></div>
+    <div id="tbp">
+      <a class="ab">
+      <h1>NR meals</h1>
+    </a>
+    </div>
+  <hr>
+    <p class="headinpro"><b>Our famous products</b></p>
+<!-- <p>Resize the browser window to see the effect.</p> -->
+<br>
+
+<div class="row">
+  <div class="column" style="background-color: rgb(255, 255, 255);">
+    <div class="card">
+      <img src="home1.webp" alt="paneer" style="width:100%">
+      <div class="container">
+        <h2>Paneer Tikka</h2>
+        <p class="title">₹220</p>
+        <p></p>
+        <p>Punjabi Special</p>
+        <p><button class="button" class="zoom-in-out-box">Add to cart</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column" style="background-color: rgb(255, 255, 255);">
+    <div class="card">
+      <img src="home2.jpg" alt="undhiyu" id="imagesizehome">  
+      <div class="container">
+        <h2>Undhiyu</h2>
+        <p class="title">₹150</p>
+        <p></p>
+        <p>Gujrati Special</p>
+        <p><button class="button">Add to cart</button></p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column" style="background-color: rgb(255, 255, 255);">
+    <div class="card">
+      <img src="home3.jpg" alt="John" id="imagesizehome">
+      <div class="container">
+        <h2>Dosa</h2>
+        <p class="title">₹120</p>
+        <p>South Special</p>
+        <p><button class="button">Add to cart</button></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr>
+
+<div class="row">
+  <div class="column" style="background-color: rgb(255, 255, 255);">
+    <div class="card">
+      <img src="home4.webp" alt="John" id="imagesizehome">
+      <div class="container">
+        <h2>Pav Bhaji</h2>
+        <p class="title">₹100</p>
+        <p>Maharashtra special</p>
+        <p><button class="button">Add to cart</button></p>
+      </div>
+    </div>
+  </div>
+  <div class="column" style="background-color: rgb(255, 255, 255);">
+    <div class="card">
+      <img src="home5.jpg" alt="John" id="imagesizehome">
+      <div class="container">
+        <h2>Chole Bhature</h2>
+        <p class="title">₹80</p>
+        <p>Punjabi Popular</p>
+        <p><button class="button">Add to cart</button></p>
+      </div>
+    </div>
+  </div><div class="column" style="background-color: rgb(255, 255, 255);">
+    <div class="card">
+      <img src="home6.jpg" alt="John" id="imagesizehome">
+      <div class="container">
+        <h2>Khaman</h2>
+        <p class="title">₹130</p>
+        <p>Gujrati Special</p>
+        <p><button class="button">Add to cart</button></p>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  jQuery(document).ready(function() {
+   jQuery('.main_tabs .tabs a').on('click', function(e)  {
+       e.preventDefault();
+       switch(this.id){
+          case "home_tab":
+          window.location.href = "index.html";
+          break;
+          case "other_tab":
+          window.location.href = "other.html";
+          break;
+      }
+  });
+});
+</script>
+<footer class="footer">
+  <div class="l-footer">
+      <h1 >
+          <img src="logo.jpg" alt="" style="border-radius: 50%;" style="width: 50px;">
+      </h1>
+      <p>
+        With love and support from consumers, we expanded far and wide, first through the entire city of Bengaluru and then across the entire country. Today, we are the leading food ordering and delivery platform in India.
+      </p>
+  </div>
+  <ul class="r-footer">
+      <li>
+          <h2>
+              Social</h2>
+          <ul class="box">
+              <li><a href="#">
+                      <p><i class="fa-brands fa-facebook"></i> Facebook</p>
+                  </a></li>
+              <li><a href="#">
+                      <p><i class="fa-brands fa-twitter"></i> Twitter</p>
+                  </a></li>
+              <li><a href="#">
+                      <p><i class="fa-brands fa-pinterest"></i> Pinterest</p>
+                  </a></li>
+              <li><a href="#">
+                      <p><i class="fa-brands fa-instagram"></i> instagram</p>
+                  </a></li>
+          </ul>
+      </li>
+      <li class="features">
+          <h2>
+              Information</h2>
+          <ul class="box h-box">
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Pricing</a></li>
+              <li><a href="#">Sales</a></li>
+              <li><a href="#">Tickets</a></li>
+              <li><a href="#">Certifications</a></li>
+
+          </ul>
+      </li>
+      <li>
+          <h2>
+              Legal</h2>
+          <ul class="box">
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms of Use</a></li>
+              <li><a href="#">Contract</a></li>
+          </ul>
+      </li>
+  </ul>
+  <div class="b-footer">
+      <p>
+          &copy; NR restaurant</p>
+  </div>
+</footer>
+
+</body>
+</html>

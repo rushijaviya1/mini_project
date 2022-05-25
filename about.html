@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        #bgp {
+            border: 0px solid rgb(250, 246, 246);
+            padding: 55px;
+            background: url(aboutb1.jpg);
+            filter: blur(3px);
+            background-size:cover;
+            background-repeat: no-repeat;
+            background-position:center center;
+        }
+        #tbp{
+            background-color: rgb(0,0,0); /* Fallback color */
+            background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+            color: white;
+            font-weight: bold;
+            border: 3px solid #f1f1f1;
+            /* position: absolute; */
+            position:absolute;
+            top: 70%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1;
+            width: 80%;
+            padding: 20px;
+            text-align: center;
+        }
+        .but{
+  /* background-color: rgb(0, 0, 0); */
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 30px;
+  color: rgb(255, 255, 255);
+  font-style:unset;
+  
+  /* padding: 0px; */
+}
+.but:hover {
+  background-color: rgba(32, 29, 29, 0.527);
+}
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+        </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body >
+    
+    <div class="main_tabs" style="text-align-last: center;">
+        <div class="tabs" style="background-color: rgb(0, 0, 0) ;">
+        <a id="home_tab" href="index.html" class="but">Home &emsp;</a>
+        <a id="other_tab" href="product.html" class="but">Products&emsp;</a>
+        <a id="other_tab" href="login.html" class="but">Login&emsp;</a>
+        <a id="other_tab" href="about.html" class="but">About us</a>
+        </div> 
+    </div>
+    <div id="bgp" style="height: 1080px; width: 1400px"></div>
+    <div id="tbp">
+    <p style="font-size: xxx-large; font-family: Arial, Helvetica, sans-serif ;">Who are we?</p>
+    <p style="font-family: Arial, Helvetica, sans-serif ;">Launched in 2012, Our technology platform connects customers and delivery partners, serving their multiple needs of food. 
+        Customers use our platform to search and discover foods, read and write customer generated reviews and view and upload photos, order food delivery, book a table and make payments while dining-out at restaurants. 
+        On the other hand, we provide full access to customers give us feedback of all things(what we include).
+        We also operate a one-stop procurement solution, Hyperpure, which supplies high quality ingredients and kitchen products to restaurant . 
+        We also provide our delivery partners with transparent and flexible earning opportunities.</p>
+        <h3 style="font-family: Arial, Helvetica, sans-serif ;text-align: left;">OUR PRINCIPLES:-</h3>
+        <li style="font-family: Arial, Helvetica, sans-serif ;text-align: left;">Customer satisfaction</li>
+        <li style="font-family: Arial, Helvetica, sans-serif ; text-align: left;">Healthy Food</li>
+        <li style="font-family: Arial, Helvetica, sans-serif ;text-align: left;">Fast service</li>
+        <h2 style="font-family: Arial, Helvetica, sans-serif ;text-align: left;">Contact us:-</h2>
+        <h4 style="font-family: Arial, Helvetica, sans-serif ;text-align: left;">email:- khanakhao124@gmail.com</h4>
+        <h4 style="font-family: Arial, Helvetica, sans-serif ;text-align: left;">Helpline no. :- 1354267139</h4>
+    </div>
+    <script>
+        jQuery(document).ready(function() {
+   jQuery('.main_tabs .tabs a').on('click', function(e)  {
+       e.preventDefault();
+       switch(this.id){
+           case "home_tab":
+           window.location.href = "index.html";
+           break;
+           case "other_tab":
+           window.location.href = "other.html";
+           break;
+       }
+   });
+});
+    </script>
+</body>
+</html>

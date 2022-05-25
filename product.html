@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="rr.css">
+<link rel="stylesheet" href="r.css">
+</head>
+
+<body>
+  <div class="main_tabs" style="text-align-last: center;">
+    <div class="tabs" style="background-color: rgb(0, 0, 0) ;">
+      <a id="home_tab" href="index.html" class="but">Home &emsp;</a>
+      <a id="other_tab" href="index.html" class="but">Products&emsp;</a>
+      <a id="other_tab" href="login.html" class="but">Login&emsp;</a>
+      <a id="other_tab" href="about.html" class="but">About us</a>
+    </div> 
+  </div>
+  
+
+    <h1>Hey, Welcomes you to our Restaurant...</h1>
+    <hr>
+<!--  -->
+    <h2>What would you like to order from following items?</h2>
+
+
+  <div>
+    <button class="button"><a href="gujarati.html" style="font-size: 50px; color: rgb(255, 255, 255);" align="left">Gujarati Food</a></button>
+    <button class="button"><a href="dosa.html" style="font-size: 50px; color: rgb(255, 255, 255);" >Dosa</a></button>
+    <button class="button"><a href="punjabi.html" style=" font-size: 50px;">Punjabi Food</a></button>
+    <button class="button"><a href="pizza.html" style="font-size: 50px; color: rgb(255, 255, 255);" >Pizza</a></button>
+    <button class="button"><a href="chinese.html" style="font-size: 50px; color: rgb(255, 255, 255);" >Chinese Food</a></button>
+    <button class="button"><a href="burger.html" style="font-size: 50px; color: rgb(255, 255, 255);" >Burgers</a></button>
+    <button class="button"><a href="italian.html" style="font-size: 50px; color: rgb(255, 255, 255);" >Italian Food</a></button>
+    <button class="button"><a href="snacks.html" style="font-size: 50px; color: rgb(255, 255, 255);" >Snacks</a></button>
+  </div>
+    
+  <script>
+    jQuery(document).ready(function() {
+     jQuery('.main_tabs .tabs a').on('click', function(e)  {
+         e.preventDefault();
+         switch(this.id){
+            case "home_tab":
+            window.location.href = "index.html";
+            break;
+            case "other_tab":
+            window.location.href = "other.html";
+            break;
+        }
+    });
+  });
+  </script>
+</body>
+</html>

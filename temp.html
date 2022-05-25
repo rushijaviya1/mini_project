@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div class="main_tabs">
+    <ul class="tabs">
+      <li id="home_tab"><a href="home.html">Home</a></li>
+      <li id="other_tab"><a href="about.html">Other</a></li>
+      <li id="other_tab"><a href="4.html">try</a></li>
+    </ul> 
+</div>
+<script>
+  jQuery(document).ready(function() {
+   jQuery('.main_tabs .tabs a').on('click', function(e)  {
+       e.preventDefault();
+       switch(this.id){
+           case "home_tab":
+           window.location.href = "index.html";
+           break;
+           case "other_tab":
+           window.location.href = "other.html";
+           break;
+       }
+   });
+});
+</script>
+</body>
+</html>
+ <!-- <li><a href="home.html">home</a></li>
+//       <li><a href="about.html">about</a></li> -->
+       <!-- <li><a href="#">Links</a></li> -->
